@@ -49,10 +49,13 @@ const ScrollSection1 = () => {
           </div> */}
 
           <div
-            className="hidden xl:block absolute top-0 left-1/2 border"
-            width="1167"
-            height="460" // xl:left-60 w-4/5 xl:w-2/5
-            style={{ transform: "translate(-50%, 0%)" }}
+            className="hidden xl:block absolute top-0 left-1/2"
+            // xl:left-60 w-4/5 xl:w-2/5
+            style={{
+              transform: "translate(-50%, 0%)",
+              width: "1167",
+              height: "460",
+            }}
           >
             <img
               src="/images/darkGradient.png"
