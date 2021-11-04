@@ -47,6 +47,20 @@ const ScrollSection1 = () => {
               className="border"
             />
           </div> */}
+
+          <div
+            className="hidden xl:block absolute top-0 left-1/2 border"
+            width="1167"
+            height="460" // xl:left-60 w-4/5 xl:w-2/5
+            style={{ transform: "translate(-50%, 0%)" }}
+          >
+            <img
+              src="/images/darkGradient.png"
+              alt=""
+              className="w-full h-full"
+            />
+          </div>
+
           <div className="w-full xl:w-1046 flex mx-auto flex-col">
             {/* Part 1 */}
             <div

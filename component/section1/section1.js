@@ -1,28 +1,28 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Image from "next/image";
 import Navbar from "../navbar/navbar";
 
 const Section1 = () => {
   return (
-    <section className="relative h-screen">
+    <section className="relative">
       {/* Navbar */}
       <Navbar />
 
       <div
-        className="absolute top-0 left-1/2" // xl:left-60 w-4/5 xl:w-2/5
-        style={{ transform: "translate(-50%, 0%)" }}
+        className="hidden xl:block absolute top-0 left-1/2"
+        // xl:left-60 w-4/5 xl:w-2/5
+        style={{
+          transform: "translate(-50%, 0%)",
+          width: "1167",
+          height: "460",
+        }}
       >
-        <Image
-          src="/images/darkGradient.png"
-          alt=""
-          className="w-full h-full"
-          width={1167}
-          height={460}
-        />
+        <img src="/images/darkGradient.png" alt="" className="w-full h-full" />
       </div>
 
-      {/* Main Content */}
-      <div className="mx-auto flex items-center justify-center flex-col h-full  mt- xl:mt-0 xl:pt- xl:pb-">
+      {/* Main Content xl:h-900 */}
+      <div className="mx-auto flex items-center justify-center flex-col mt-24 md:mt-24 xl:mt-0 xl:pt-48 xl:pb-64">
         {/* Heading */}
         <div>
           <h1 className="font-bold text-3xl md:text-5xl xl:text-7xl text-center font-plus-jakarta-display">

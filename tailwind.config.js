@@ -41,6 +41,7 @@ module.exports = {
         449: "449px",
         684: "684px",
         740: "740px",
+        900: "900px",
       },
       colors: {
         sky: colors.sky,

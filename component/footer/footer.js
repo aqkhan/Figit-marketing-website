@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+// import Image from "next/image";
+// import Link from "next/link";
 import PageFooter from "../ui/pageFooter";
 
 const Footer = () => {
@@ -43,43 +43,6 @@ const Footer = () => {
       </div>
 
       {/* <div className="flex items-center justify-center flex-col mx-auto mt-16 md:mt-24 2xl:mt-32 2xl:w-1427 2xl:mx-auto"> */}
-      {/* line */}
-      {/* <div className="w-full border border-gray-200"></div>
-
-        <div className="flex items-center justify-between flex-col lg:flex-row w-full">
-          {/* Logo *
-          <div className="mt-7 md:mt-6 lg:my-14 text-left">
-            <Image src="/svgs/figmauto.svg" alt="" width={107} height={24} />
-            <h4 className="font-medium text-base text-gray-600">
-              howdy@figit.com
-            </h4>
-          </div>
-
-          {/* Links *
-          <div className="flex items-center justify-center mt-8 md:mt-9 text-center">
-            <h5 className="text-gray-600 justify-around text-base font-medium">
-              Pricing
-            </h5>
-            <Link href="/faq">
-              <a className="ml-8 md:ml-16 text-gray-600 justify-around text-base font-medium">
-                FAQ
-              </a>
-            </Link>
-            <h5 className="ml-8 md:ml-16 text-gray-600 justify-around text-base font-medium">
-              Privacy Policy
-            </h5>
-            <h5 className="ml-8 md:ml-16 text-gray-600 justify-around text-base font-medium">
-              Login
-            </h5>
-          </div>
-
-          {/* Discord icon *
-          <div className="my-8 md:mt-11 flex justify-center">
-            <div className="rounded-full border-2 p-4">
-              <Image src="/svgs/discord.svg" alt="" width={28} height={20} />
-            </div>
-          </div>
-        </div> */}
       <PageFooter />
       {/* </div> */}
     </section>

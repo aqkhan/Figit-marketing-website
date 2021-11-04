@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
+// import Link from "next/link";
+// import Image from "next/image";
 import Navbar from "../component/navbar/navbar";
 import PageFooter from "../component/ui/pageFooter";
 
