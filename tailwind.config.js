@@ -8,7 +8,9 @@ module.exports = {
       backgroundImage: {
         superCharged: "linear-gradient(#7E22CE 0%, #18AFEC 100%)",
         gradient: "url('/images/pricingBgGradient.png')",
-        "purple-gradient": "url('/images/priceCardGradient.png')",
+        // "purple-gradient": "url('/images/priceCardGradient.png')",
+        "purple-gradient": "url('/images/priceCardGradient1.png')",
+        hero: "url('/svgs/hero.svg')",
       },
       width: {
         textWidth: "42%",
@@ -19,6 +21,8 @@ module.exports = {
         342: "342px",
         343: "343px",
         408: "408px",
+        421: "421px",
+        450: "450px",
         586: "586px",
         534: "534px",
         545: "545px",
@@ -39,6 +43,7 @@ module.exports = {
       height: {
         262: "262px",
         449: "449px",
+        588: "588px",
         684: "684px",
         740: "740px",
         900: "900px",
@@ -48,6 +53,7 @@ module.exports = {
         purple: colors.purple,
         trueGray: colors.trueGray,
         primary: "#191919",
+        paypal: "#F6C557",
       },
       fontFamily: {
         "plus-jakarta-display": ["Plus Jakarta Display", "sans-serif"],
