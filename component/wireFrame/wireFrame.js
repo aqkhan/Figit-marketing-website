@@ -4,7 +4,7 @@ import Figma from "../../public/images/figma.png";
 
 const WireFrame = () => {
   return (
-    <section className="hidden lg:block bg-gray-900 px-20 pt-24 pb-14 w-full h-full">
+    <section className="hidden xl:block bg-gray-900 px-20 pt-24 pb-14 w-full h-full">
       <div>
         <h2 className="text-gray-100 text-4xl font-medium font-plus-jakarta-display">
           WireFrame

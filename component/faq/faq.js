@@ -3,27 +3,10 @@ import React, { useState } from "react";
 import Navbar from "../navbar/navbar";
 
 const Faq = () => {
-  const [open, setOpen] = useState(false);
-  const [id, setId] = useState("");
+  const [Id, setId] = useState("");
 
-  const showAnswer = (id, value) => {
-    if (id === value) {
-      console.log(value, id, open);
-      setId(value);
-      setOpen(!open);
-    }
-    console.log(id);
-  };
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", e => {
-  //     if (window.scrollY > 400) {
-  //       console.log("black " + window.scrollY);
-  //     } else {
-  //       console.log("white " + window.scrollY);
-  //     }
-  //   });
-  // });
+  const showAnswer = id => setId(id);
+  const hideAnswer = () => setId(" ");
 
   return (
     <section className="font-plus-jakarta-sans relative">
@@ -61,25 +44,31 @@ const Faq = () => {
                 <div
                   className="flex items-center justify-between w-full cursor-pointer pb-8 border-b border-gray-200"
                   id="q1"
-                  onClick={e => showAnswer(e.currentTarget.id, "q1")}
                 >
                   <p className="text-gray-900 text-xl font-medium">
                     Can I use a presentation template to make a marketing deck?
                   </p>
-                  <img
-                    src={
-                      "/svgs/" +
-                      (open && id === "q1" ? "minus.svg" : "plus.svg")
-                    }
-                    alt=""
-                  />
+                  {Id === "q1" ? (
+                    <img
+                      src={"/svgs/minus.svg"}
+                      alt=""
+                      className="hidden md:block px-1 py-3"
+                      onClick={hideAnswer}
+                    />
+                  ) : (
+                    <img
+                      src={"/svgs/plus.svg"}
+                      alt=""
+                      className="hidden md:block"
+                      onClick={() => showAnswer("q1")}
+                    />
+                  )}
                 </div>
 
                 {/* Answer 1 */}
                 <div
                   className={
-                    "bg-gray-50 p-6 " +
-                    (open && id === "q1" ? "block" : "hidden")
+                    "bg-gray-50 p-6 " + (Id === "q1" ? "block" : "hidden")
                   }
                 >
                   <p className="text-gray-700 text-lg font-medium w-711">
@@ -97,25 +86,31 @@ const Faq = () => {
                 <div
                   className="flex items-center justify-between w-full cursor-pointer border-b border-gray-200 py-8"
                   id="q2"
-                  onClick={e => showAnswer(e.currentTarget.id, "q2")}
                 >
                   <p className="text-gray-900 text-xl font-medium">
                     Can I use a presentation template to make a marketing deck?
                   </p>
-                  <img
-                    src={
-                      "/svgs/" +
-                      (open && id === "q2" ? "minus.svg" : "plus.svg")
-                    }
-                    alt=""
-                  />
+                  {Id === "q2" ? (
+                    <img
+                      src={"/svgs/minus.svg"}
+                      alt=""
+                      className="hidden md:block px-1 py-3"
+                      onClick={hideAnswer}
+                    />
+                  ) : (
+                    <img
+                      src={"/svgs/plus.svg"}
+                      alt=""
+                      className="hidden md:block"
+                      onClick={() => showAnswer("q2")}
+                    />
+                  )}
                 </div>
 
                 {/* Answer 2 */}
                 <div
                   className={
-                    "bg-gray-50 p-6 " +
-                    (open && id === "q2" ? "block" : "hidden")
+                    "bg-gray-50 p-6 " + (Id === "q2" ? "block" : "hidden")
                   }
                 >
                   <p className="text-gray-700 text-lg font-medium w-711">
@@ -133,25 +128,31 @@ const Faq = () => {
                 <div
                   className="flex items-center justify-between w-full cursor-pointer border-b border-gray-200 py-8"
                   id="q3"
-                  onClick={e => showAnswer(e.currentTarget.id, "q3")}
                 >
                   <p className="text-gray-900 text-xl font-medium">
                     Can I use a presentation template to make a marketing deck?
                   </p>
-                  <img
-                    src={
-                      "/svgs/" +
-                      (open && id === "q3" ? "minus.svg" : "plus.svg")
-                    }
-                    alt=""
-                  />
+                  {Id === "q3" ? (
+                    <img
+                      src={"/svgs/minus.svg"}
+                      alt=""
+                      className="hidden md:block px-1 py-3"
+                      onClick={hideAnswer}
+                    />
+                  ) : (
+                    <img
+                      src={"/svgs/plus.svg"}
+                      alt=""
+                      className="hidden md:block"
+                      onClick={() => showAnswer("q3")}
+                    />
+                  )}
                 </div>
 
                 {/* Answer 1 */}
                 <div
                   className={
-                    "bg-gray-50 p-6 " +
-                    (open && id === "q3" ? "block" : "hidden")
+                    "bg-gray-50 p-6 " + (Id === "q3" ? "block" : "hidden")
                   }
                 >
                   <p className="text-gray-700 text-lg font-medium w-711">
@@ -169,25 +170,31 @@ const Faq = () => {
                 <div
                   className="flex items-center justify-between w-full cursor-pointer border-b border-gray-200 py-8"
                   id="q4"
-                  onClick={e => showAnswer(e.currentTarget.id, "q4")}
                 >
                   <p className="text-gray-900 text-xl font-medium">
                     Can I use a presentation template to make a marketing deck?
                   </p>
-                  <img
-                    src={
-                      "/svgs/" +
-                      (open && id === "q4" ? "minus.svg" : "plus.svg")
-                    }
-                    alt=""
-                  />
+                  {Id === "q4" ? (
+                    <img
+                      src={"/svgs/minus.svg"}
+                      alt=""
+                      className="hidden md:block px-1 py-3"
+                      onClick={hideAnswer}
+                    />
+                  ) : (
+                    <img
+                      src={"/svgs/plus.svg"}
+                      alt=""
+                      className="hidden md:block"
+                      onClick={() => showAnswer("q4")}
+                    />
+                  )}
                 </div>
 
                 {/* Answer 1 */}
                 <div
                   className={
-                    "bg-gray-50 p-6 " +
-                    (open && id === "q4" ? "block" : "hidden")
+                    "bg-gray-50 p-6 " + (Id === "q4" ? "block" : "hidden")
                   }
                 >
                   <p className="text-gray-700 text-lg font-medium w-711">

@@ -35,7 +35,7 @@ const ScrollSection1 = () => {
   // }
 
   return (
-    <section className="w-full relative pt-20 ">
+    <section className="w-full relative">
       <div className="w-full">
         <div className="w-full xl:min-h-screen">
           {/* <div className="absolute -top-60 left-60">

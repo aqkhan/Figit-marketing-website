@@ -17,11 +17,11 @@ module.exports = {
         imgWidth: "58%",
         textWidth2: "45%",
         imgWidth2: "55%",
-        inputWidth: "445px",
         342: "342px",
         343: "343px",
         408: "408px",
         421: "421px",
+        445: "445px",
         450: "450px",
         586: "586px",
         534: "534px",
@@ -34,11 +34,12 @@ module.exports = {
       },
       inset: {
         "-104": "-32rem",
+        30: "120px",
+        72: "72px",
         298: "298px",
+        403: "403px",
         448: "448px",
         862: "862px",
-        403: "403px",
-        30: "120px",
       },
       height: {
         262: "262px",
@@ -47,6 +48,9 @@ module.exports = {
         684: "684px",
         740: "740px",
         900: "900px",
+      },
+      translate: {
+        50: "-50%",
       },
       colors: {
         sky: colors.sky,
@@ -61,7 +65,12 @@ module.exports = {
         arvo: ["Arvo", "serif"],
       },
       fontSize: {
+        28: "28px",
+        32: "32px",
         80: "80px",
+      },
+      spacing: {
+        70: "70px",
       },
     },
   },

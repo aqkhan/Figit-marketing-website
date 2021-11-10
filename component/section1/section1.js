@@ -10,19 +10,19 @@ const Section1 = () => {
       <Navbar />
 
       <div
-        className="hidden xl:block absolute top-0 left-1/2"
+        className="hidde xl:block absolute top-0 left-1/2 h-262 w-full md:w-auto"
         // xl:left-60 w-4/5 xl:w-2/5
         style={{
           transform: "translate(-50%, 0%)",
           width: "1167",
-          height: "460",
+          // height: "460",
         }}
       >
         <img src="/images/darkGradient.png" alt="" className="w-full h-full" />
       </div>
 
       {/* Main Content xl:h-900 */}
-      <div className="mx-auto flex items-center justify-center flex-col mt-24 md:mt-24 xl:mt-0 xl:pt-48 xl:pb-64">
+      <div className="mx-auto flex items-center justify-center flex-col pt-20 md:pt-28 xl:pt-48 pb-20 md:pb-32 xl:pb-64">
         {/* Heading */}
         <div>
           <h1 className="font-bold text-3xl md:text-5xl xl:text-7xl text-center font-plus-jakarta-display">
@@ -42,8 +42,8 @@ const Section1 = () => {
         </div>
 
         {/* Button */}
-        <div className="mt-7 md:mt-8 lg:mt-9">
-          <button className="h-14 rounded-full hover:bg-purple-700 bg-purple-100 hover:text-purple-100 text-purple-700 px-8 flex items-center justify-center cursor-pointer">
+        <div className="mt-7 md:mt-8 xl:mt-9">
+          <button className="h-14 rounded-full transition duration-300 ease-in-out hover:bg-purple-700 bg-purple-100 hover:text-purple-100 text-purple-700 px-8 flex items-center justify-center cursor-pointer">
             <Image src="/svgs/getFigmauto.svg" alt="" width={16} height={24} />
             <p className="font-medium text-lg ml-4 font-plus-jakarta-sans">
               GetFigmauto
@@ -52,7 +52,7 @@ const Section1 = () => {
         </div>
 
         {/* down arrow icon and Scroll for magic */}
-        <div className="hidden lg:flex mt-20 justify-center flex-col items-center">
+        <div className="hidden xl:flex mt-20 justify-center flex-col items-center">
           <Image
             src="/svgs/animatedDownArrow.svg"
             alt=""
