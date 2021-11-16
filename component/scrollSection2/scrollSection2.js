@@ -23,14 +23,7 @@ const ScrollSection2 = () => {
     if (el === null) return null;
     else {
       let rect = el.getBoundingClientRect();
-      if (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <=
-          (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <=
-          (window.innerWidth || document.documentElement.clientWidth)
-      ) {
+      if (rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth)) {
         setItem(el.id);
       }
     }
@@ -52,10 +45,7 @@ const ScrollSection2 = () => {
                   <span>Design</span>
                   <span className="ml-2 xl:ml-0">Landing pages</span>
                 </h1>
-                <p className="text-gray-400 text-base md:text-lg xl:text-xl mt-4 xl:mt-5 ">
-                  Rapidly ideate on the canvas and get buy in from stakeholders
-                  with ready-made blueprints of any UI pattern you can think off
-                </p>
+                <p className="text-gray-400 text-base md:text-lg xl:text-xl mt-4 xl:mt-5 ">Rapidly ideate on the canvas and get buy in from stakeholders with ready-made blueprints of any UI pattern you can think off</p>
               </div>
 
               {/* w-343 md:w-584 */}
@@ -75,10 +65,7 @@ const ScrollSection2 = () => {
                   <span>Design</span>
                   <span className="ml-2 xl:ml-0">Dashboards</span>
                 </h1>
-                <p className="text-gray-400 text-base md:text-lg xl:text-xl mt-4 xl:mt-5 ">
-                  Rapidly ideate on the canvas and get buy in from stakeholders
-                  with ready-made blueprints of any UI pattern you can think off
-                </p>
+                <p className="text-gray-400 text-base md:text-lg xl:text-xl mt-4 xl:mt-5 ">Rapidly ideate on the canvas and get buy in from stakeholders with ready-made blueprints of any UI pattern you can think off</p>
               </div>
 
               <div className="mt-10 md:mt-12 xl:hidden">
@@ -97,10 +84,7 @@ const ScrollSection2 = () => {
                   <span>Design</span>
                   <span className="ml-2 xl:ml-0">Stores</span>
                 </h1>
-                <p className="text-gray-400 text-base md:text-lg xl:text-xl mt-4 xl:mt-5">
-                  Rapidly ideate on the canvas and get buy in from stakeholders
-                  with ready-made blueprints of any UI pattern you can think off
-                </p>
+                <p className="text-gray-400 text-base md:text-lg xl:text-xl mt-4 xl:mt-5">Rapidly ideate on the canvas and get buy in from stakeholders with ready-made blueprints of any UI pattern you can think off</p>
               </div>
 
               <div className="mt-10 md:mt-12 xl:hidden">
@@ -116,36 +100,21 @@ const ScrollSection2 = () => {
             <div className="w-full h-full flex items-center">
               <div className="relative top-0 left-0">
                 {/* Part 1 */}
-                <div
-                  className={
-                    "relative top-0 left-0 w-full h-full transition duration-500 ease-in-out " +
-                    (item === "p3" ? "xl:block opacity-100" : "opacity-0")
-                  }
-                >
+                <div className={"relative top-0 left-0 w-full h-full transition duration-500 ease-in-out " + (item === "p3" ? "xl:block opacity-100" : "opacity-0")}>
                   <div className="w-80 mt-10 xl:ml-20">
                     <img src="/images/lp2group1.png" alt="" />
                   </div>
                 </div>
 
                 {/* Part 2 */}
-                <div
-                  className={
-                    "xl:ml- absolute top-0 left-0 w-full h-full transition duration-500 ease-in-out " +
-                    (item === "p4" ? "xl:block opacity-100" : " opacity-0")
-                  }
-                >
+                <div className={"xl:ml- absolute top-0 left-0 w-full h-full transition duration-500 ease-in-out " + (item === "p4" ? "xl:block opacity-100" : " opacity-0")}>
                   <div className="w-80 mt-10 xl:ml-20">
                     <img src="/images/lp2group2.png" alt="" />
                   </div>
                 </div>
 
                 {/* Part 3 */}
-                <div
-                  className={
-                    "xl:ml- absolute top-0 left-0 w-full h-full transition duration-500 ease-in-out " +
-                    (item === "p5" ? "xl:block opacity-100" : " opacity-0")
-                  }
-                >
+                <div className={"xl:ml- absolute top-0 left-0 w-full h-full transition duration-500 ease-in-out " + (item === "p5" ? "xl:block opacity-100" : " opacity-0")}>
                   <div className="w-80 mt-10 xl:ml-20">
                     <img src="/images/lp2group3.png" alt="" />
                   </div>
